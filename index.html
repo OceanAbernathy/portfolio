@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ocean Abernathy | Portfolio">
+    <meta name="keywords" content="Ocean Abernathy, Ocean Abernathy Portfolio">
+    <meta name="author" content="Ocean Abernathy">
+    <title>Ocean Abernathy || Front-End Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+              <!-- For future AOS functionality -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
+
+  </head>
+  <body>
+
+    <header>
+      <div class="drop-fade" id="topnav"></div>
+      <nav class="drop-fade" id="topnav-content">
+        <a class="fade-in" href="#landing">Home</a>
+        <a class="fade-in" href="#about">About</a>
+        <a class="fade-in" href="#portfolio">Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="fixed-buttons side-fade">
+      <a href="https://github.com/OceanAbernathy" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ocean-abernathy/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      <a href="mailto:ocean.abernathy@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+      </a>
+    </div>
+
+    <div id="landing">
+      <img id="landscape" src="img/clouds-cold-dark-540518.jpg">
+      <div class="gradient-overlay"></div>
+      <div id="showcase" class="fade-in">
+        <div class="showcase-content">
+          <h1>Ocean Abernathy</h1>
+          <p>Front-End Web Developer</p>
+        </div>
+      </div>
+      <button onclick="downFunction()" id="downBtn" title="Go to about"><svg class="arrow-up" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z"/></svg></button>
+      <button onclick="topFunction()" id="upBtn" title="Go to top"><svg class="arrow-up" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z"/></svg></button>
+    </div>
+
+    <div id="about">
+      <h2>Hi, I'm Ocean and I am a front-end developer. I enjoy writing code because I find it very rewarding bringing an idea to life.</h2>
+    </div>
+
+    <div id="portfolio">
+      <div class="content">
+        <h2>Product Site</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/cyber/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/cybersafe" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/cyber/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 12.01.08 PM.png" alt=""></a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Product Site</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/devourwebdesign/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/devour" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/devourwebdesign/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 11.21.16 AM.png" alt=""></a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Landing Page</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/landing/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/landing" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/landing/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 11.18.45 AM.png" alt=""></a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Article Site</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/endearingly/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/endearingly" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/endearingly/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 11.22.06 AM.png" alt=""></a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Parallax Site</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/parallax/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/parallax" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/parallax/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 11.23.51 AM.png" alt=""></a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Sliding Form</h2>
+        <div class="content-wrapper">
+          <div class="content-overlay">
+            <div class="site">
+              <a href="http://oceanabernathy.com/slidingform/" target="_blank">View Site</a>
+            </div>
+            <div class="code">
+              <a href="https://github.com/OceanAbernathy/sliding_form" target="_blank">View Code</a>
+            </div>
+          </div>
+          <a href="http://oceanabernathy.com/slidingform/" target="_blank"><img class="portfolio-items" src="img/Screen Shot 2019-10-10 at 11.26.14 AM.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2020 Ocean Abernathy</p>
+      <div class="foot-content">
+        <a href="https://github.com/OceanAbernathy" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ocean-abernathy/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://www.codecademy.com/profiles/ocean.abernathy" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.827 19.73h-5.595c-.094 0-.17.058-.17.172v1.515c0 .094.058.17.172.17h5.594c.096 0 .172-.044.172-.164v-1.515c0-.105-.057-.166-.173-.166v-.014.002zM16.463 2.465c.016.035.03.068.047.12v18.79c0 .061-.02.096-.037.114a.168.168 0 0 1-.135.06H.153c-.038 0-.075 0-.097-.02A.181.181 0 0 1 0 21.395V2.566c0-.076.04-.134.096-.15h16.242c.04 0 .096.017.115.034v.016l.01-.001zM1.818 19.575c0 .073.038.136.096.153h12.643c.058-.019.096-.076.096-.154V4.404c0-.073-.039-.134-.098-.15H1.915c-.056.02-.096.073-.096.15l-.003 15.17.002.001zm5.174-8.374c.65 0 1.014.177 1.396.619.058.075.153.094.23.035l1.034-.92c.075-.044.058-.164.02-.224-.635-.764-1.554-1.244-2.74-1.244-1.59 0-2.79.795-3.255 2.206-.165.495-.24 1.126-.24 1.979 0 .855.075 1.484.255 1.98.465 1.426 1.665 2.205 3.255 2.205 1.2 0 2.115-.48 2.745-1.216.045-.074.06-.165-.015-.226L8.64 15.48c-.073-.047-.163-.047-.224.027-.39.45-.795.69-1.454.69-.706 0-1.245-.345-1.47-1.035-.136-.39-.166-.87-.166-1.483 0-.615.045-1.068.18-1.471.24-.659.766-1.007 1.486-1.007z"/></svg>
+        </a>
+        <a href="https://www.freecodecamp.org/ocean-abernathy" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 576 512"><path d="M97.22,96.21c10.36-10.65,16-17.12,16-21.9,0-2.76-1.92-5.51-3.83-7.42A14.81,14.81,0,0,0,101,64.05c-8.48,0-20.92,8.79-35.84,25.69C23.68,137,2.51,182.81,3.37,250.34s17.47,117,54.06,161.87C76.22,435.86,90.62,448,100.9,448a13.55,13.55,0,0,0,8.37-3.84c1.91-2.76,3.81-5.63,3.81-8.38,0-5.63-3.86-12.2-13.2-20.55-44.45-42.33-67.32-97-67.48-165C32.25,188.8,54,137.83,97.22,96.21ZM239.47,420.07c.58.37.91.55.91.55Zm93.79.55.17-.13C333.24,420.62,333.17,420.67,333.26,420.62Zm3.13-158.18c-16.24-4.15,50.41-82.89-68.05-177.17,0,0,15.54,49.38-62.83,159.57-74.27,104.35,23.46,168.73,34,175.23-6.73-4.35-47.4-35.7,9.55-128.64,11-18.3,25.53-34.87,43.5-72.16,0,0,15.91,22.45,7.6,71.13C287.7,364,354,342.91,355,343.94c22.75,26.78-17.72,73.51-21.58,76.55,5.49-3.65,117.71-78,33-188.1C360.43,238.4,352.62,266.59,336.39,262.44ZM510.88,89.69C496,72.79,483.52,64,475,64a14.81,14.81,0,0,0-8.39,2.84c-1.91,1.91-3.83,4.66-3.83,7.42,0,4.78,5.6,11.26,16,21.9,43.23,41.61,65,92.59,64.82,154.06-.16,68-23,122.63-67.48,165-9.34,8.35-13.18,14.92-13.2,20.55,0,2.75,1.9,5.62,3.81,8.38A13.61,13.61,0,0,0,475.1,448c10.28,0,24.68-12.13,43.47-35.79,36.59-44.85,53.14-94.38,54.06-161.87S552.32,137,510.88,89.69Z"></path></svg>
+        </a>
+        <a href="mailto:ocean.abernathy@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+        </a>
+      </div>
+    </footer>
+
+              <!-- For future AOS functionality -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init();
+         </script> -->
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
